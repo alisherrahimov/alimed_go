@@ -1,0 +1,65 @@
+user : 
+
+id uuid
+f_name varchar
+l_name varchar
+phone_number varchar
+gender int
+age int
+created_at date
+updated_At date
+
+image :
+
+id uuid
+image_url varchar
+uid: uuid
+created_at date
+updated_At date
+
+doctor :
+
+id uuid
+f_name varchar
+l_name varchar
+location uuid
+exp int
+profession uuid
+image uuid
+lang ["uz","ru","en"]
+review uuid
+created_at date
+updated_At date
+
+
+location:
+
+id uuid
+long float
+lang float
+created_at date
+updated_at date
+
+
+chat:
+
+id uuid 
+message varchar
+sender_id uuid
+received_id uuid
+create_at date
+updated_at date
+
+
+review:
+
+id uuid
+doctor_id uuid
+user_id uuid
+message varchar
+rating float
+created_at date
+updated_at date
+
+
+
