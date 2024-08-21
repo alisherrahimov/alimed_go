@@ -1,5 +1,24 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=GoLand
+###
+@URL = http://localhost:9090/api/v1
+
+GET {{URL}}}/users
+
 
 ###
+
+POST http://localhost:9090/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "phone_number": "998999642412"
+}
+
+###
+POST http://localhost:9090/api/v1/auth/otp
+
+Content-Type: application/json
+
+{
+  "phone_number": "998999642412",
+  "otp": "1231"
+}
