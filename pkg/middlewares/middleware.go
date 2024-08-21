@@ -1,10 +1,11 @@
 package middlewares
 
 import (
-	"alimed_go/configs"
-	"alimed_go/helper"
-	"github.com/gin-gonic/gin"
+	"alimed_go/pkg/configs"
+	"alimed_go/pkg/helper"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func AuthMiddleware() gin.HandlerFunc {
